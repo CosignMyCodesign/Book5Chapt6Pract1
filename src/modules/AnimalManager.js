@@ -1,10 +1,22 @@
-const remoteURL = "http://localhost:5002"
+// Part of advanced challenge Chapter 6
 
-export default {
-  get(id) {
-    return fetch(`${remoteURL}/animals/${id}`).then(e => e.json())
-  },
-  getAll() {
-    return fetch(`${remoteURL}/animals`).then(e => e.json())
-  }
+import APIManager from "./APIManager"
+/*
+    Remember that extending a Class means that
+    it will be in this class's prototype chain.
+*/
+class AnimalManager extends APIManager {
+    getAnimal(id) {
+      return this.get(id)
+    }
+
+    getAll() {
+      return this.all()
+    }
+
+    removeAndList(id) {
+      return this.delete(id).then(() => this.all())
+    }
 }
+
+export default new AnimalManager("animals")

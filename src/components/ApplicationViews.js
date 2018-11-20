@@ -47,18 +47,26 @@ export default class ApplicationViews extends Component {
 
 // Chapter 5 addition
 // Method to delete an animal
-      deleteAnimal = id => {
-      return fetch(`http://localhost:5002/animals/${id}`, {
-          method: "DELETE"
-      })
-      .then(e => e.json())
-      .then(() => fetch(`http://localhost:5002/animals`))
-      .then(e => e.json())
-      .then(animals => this.setState({
-          animals: animals
-      })
-    )
-  }
+  //     deleteAnimal = id => {
+  //     return fetch(`http://localhost:5002/animals/${id}`, {
+  //         method: "DELETE"
+  //     })
+  //     .then(e => e.json())
+  //     .then(() => fetch(`http://localhost:5002/animals`))
+  //     .then(e => e.json())
+  //     .then(animals => this.setState({
+  //         animals: animals
+  //     })
+  //   )
+  // }
+  //  Challenge chapter 6 to delete animal
+      deleteAnimal = (id) => {
+        return AnimalManager.removeAndList(id)
+        .then(animals => this.setState({
+            animals: animals
+          })
+        )
+      }
 // Method to remove an owner
       removeOwner = id => {
         return fetch(`http://localhost:5002/owners/${id}`, {
