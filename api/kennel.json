@@ -1,0 +1,80 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Jessica Younker"
+    },
+    {
+      "id": 2,
+      "name": "Jordan Nelson"
+    },
+    {
+      "id": 3,
+      "name": "Zoeyy LeBlanc"
+    },
+    {
+      "id": 4,
+      "name": "Blaise Roberts"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Nashville North",
+      "address": "500 Circle Way"
+    },
+    {
+      "id": 2,
+      "name": "Nashville South",
+      "address": "10101 Binary Court"
+    }
+  ],
+  "animals": [
+    {
+      "id": 1,
+      "name": "Terry"
+    },
+    {
+      "id": 2,
+      "name": "Toby"
+    },
+    {
+      "id": 3,
+      "name": "Angus"
+    },
+    {
+      "id": 4,
+      "name": "Henley"
+    },
+    {
+      "id": 5,
+      "name": "Derkins"
+    },
+    {
+      "id": 6,
+      "name": "Checkers"
+    }
+  ],
+  "owners": [
+    {
+      "id": 1,
+      "name": "Doug",
+      "phoneNumber": "615-785-9283"
+    },
+    {
+      "id": 2,
+      "name": "Dale",
+      "phoneNumber": "615-556-9245"
+    },
+    {
+      "id": 3,
+      "name": "Duncan",
+      "phoneNumber": "615-234-5394"
+    },
+    {
+      "id": 4,
+      "name": "Drake",
+      "phoneNumber": "615-456-3983"
+    }
+  ]
+}
