@@ -68,7 +68,7 @@ export default class ApplicationViews extends Component {
         .then(() => fetch(`http://localhost:5002/owners`))
         .then(e => e.json())
         .then(owners => this.setState({
-            animals: owners
+            owners: owners
         })
       )
       }
@@ -81,7 +81,7 @@ export default class ApplicationViews extends Component {
         .then(() => fetch(`http://localhost:5002/employees`))
         .then(e => e.json())
         .then(employees => this.setState({
-            animals: employees
+            employees: employees
         })
       )
       }
@@ -100,7 +100,7 @@ export default class ApplicationViews extends Component {
                 <Route path="/employees" render={(props) => {
                     return <EmployeeList 
                     employees={this.state.employees}
-                    fireEmployee={this.state.fireEmployee} />
+                    fireEmployee={this.fireEmployee} />
                 }} />
                 <Route path="/owners" render={(props) => {
                     return <OwnerList 

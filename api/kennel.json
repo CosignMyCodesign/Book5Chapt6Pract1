@@ -2,7 +2,7 @@
   "employees": [
     {
       "id": 1,
-      "name": "Jessica Younker"
+      "name": "Stanley Brown"
     },
     {
       "id": 2,
@@ -25,14 +25,24 @@
     },
     {
       "id": 2,
+      "name": "Nashville East",
+      "address": "314 Pi Lane"
+    },
+    {
+      "id": 3,
       "name": "Nashville South",
       "address": "10101 Binary Court"
+    },
+    {
+      "id": 4,
+      "name": "Nashville West",
+      "address": "9842740 Pythagoreans Trail"
     }
   ],
   "animals": [
     {
       "id": 1,
-      "name": "Terry"
+      "name": "Rodrigo"
     },
     {
       "id": 2,
